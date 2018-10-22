@@ -13,10 +13,10 @@ injectGlobal`
 const Button = styled<Props, any>("div")`
     font-family: ${props => props.fontFamily};
     font-size:  ${props => props.fontSize};
-    width: ${props => props.buttonWidth};;
-    height: ${props => props.buttonWidth};
+    width: ${props => props.width};
+    height: ${props => props.height};
     background-color: ${props => props.backgroundColor};
-    text-align: ${props => props.buttonTextAlign};
+    text-align: ${props => props.textAlign};
 `;
 
 // Define type of property
@@ -31,7 +31,7 @@ interface Props {
     textAlign: string;
 }
 
-export class My_Radio_Buttons extends React.Component<Props> {
+export class test extends React.Component<Props> {
 
     // Set default properties
     static defaultProps = {
@@ -57,7 +57,8 @@ export class My_Radio_Buttons extends React.Component<Props> {
     render() {
         return <Button color={this.props.color} 
         fontSize={this.props.fontSize} fontFamily={this.props.fontFamily} 
-        width={this.props.width} height={this.props.height} backgroundColor={this.props.backgroundColor} textAlign={this.props.textAlign}>{this.props.text}</Button>
+        width={this.props.width} height={this.props.height} backgroundColor={this.props.backgroundColor} 
+        textAlign={this.props.textAlign}>{this.props.text}</Button>
 }
 }
 
