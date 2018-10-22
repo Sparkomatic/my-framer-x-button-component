@@ -31,7 +31,7 @@ interface Props {
     textAlign: string;
 }
 
-export class test extends React.Component<Props> {
+export class SimpleButton extends React.Component<Props> {
 
     // Set default properties
     static defaultProps = {
